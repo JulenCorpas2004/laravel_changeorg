@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class AdminCategoriasController extends Controller
 {
     public function index(Request $request){
-        $categorias = Categoria::paginate(5);
-        return view('admincategorias.index', compact('categorias'));
+        $peticiones = Peticione::paginate(5);
+        return view('admincategorias.index', compact('peticiones'));
     }
 
     public function show(Request $request, $id){
